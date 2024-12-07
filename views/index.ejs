@@ -21,7 +21,6 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <% if (status === "loggedIn") { %>
-                <li class="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
                 <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
               <% } else { %>
                 <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
@@ -42,7 +41,6 @@
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <% if (status === "loggedIn") { %>
-                <button class="btn btn-primary"><a href="/profile" style="color:white; text-decoration:none">Profile</a></button>
                 <button class="btn btn-primary"><a href="/logout" style="color:white; text-decoration:none">Logout</a></button>
                 <button class="btn btn-primary"><a href="/docxtopdf" style="color:white; text-decoration:none">DOCX to PDF</a></button>              
               <% } else { %>
